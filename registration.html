@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="Styles/nysl_3.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+        <header>
+
+                <div class="headertext">
+                  <h1>Northside Youth Soccer League</h1>
+                </div>
+        
+                <div class="logo">	
+                  <img src="https://s3.amazonaws.com/gbstool/emails/2027/nysl_logo.png?AWSAccessKeyId=AKIAJBIZLMJQ2O6DKIAA&Expires=1542877200&Signature=TqhEVNKiNmKeIipaQAyxQZFZIWI%3D" alt="Logo NYSL">
+                </div>
+        
+              </header>
+        
+              <div class="header2">
+                <h2>Registration Form</h2>
+              </div>
+        
+            <aside class="navbar">
+                <nav>
+                <div class="home">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="about">
+                    <a href="about.html">About NYSL</a>
+                </div>
+                <div class="contact">
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="gameinfo">
+                    <a role="button" href="game_info.html">Game info</a>
+                  </div>
+                  <div class="rules">
+                      <a role="button" href="rules.html">NYSL Rules</a>
+                  </div>
+                  <div class="registration" id="current">
+                        <a role="button" href="registration.html">Register</a>
+                  </div>
+                    
+                 </nav>
+            </aside>
+      
+          <div class="content">
+          
+            <form id="registration" name="registration" method="GET" action="show_data.html">
+
+              <div class="flexregistration">
+
+                <div class="flexname">
+                    <div class="flexfirstname">
+                        Player's First Name:
+                        <input type="text" name="first_name">
+                    </div>
+                    <div class="flexlastname">
+                        Last Name:
+                        <input type="text" name="last_name">
+                    </div>
+                </div>
+
+                <div class="flexfullwidth">
+                    Street Address:
+                    <input type="text" name="street_address">
+                </div>
+
+                <div class="flexhalfwidth">
+                    <div class="flexcity">
+                        City:
+                        <input type="text" name="city">
+                    </div>
+
+                    <div class="flexzip">
+                        Zip Code:
+                        <input type="text" name="zip_code">
+                    </div>
+                </div>
+
+                <div class="flexhalfwidth">
+                    <div class="flexbdate">
+                        Birth Date (mm/dd/yyyy):
+                        <input class="birthdate" type="date" name="birth_date">
+                    </div>
+
+                    <div class="flexgender">
+                        Gender:
+                        <div>
+                        <input type="radio" name="gender" value="Female" checked> Female
+                        </div>
+                        <div>
+                        <input type="radio" name="gender" value="Male"> Male
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flexgrade">
+                    Grade:
+                    <input type="radio" name="grade" value="Pre-School" checked> Pre-School
+                    <input type="radio" name="grade" value="first"> 1<sup>st</sup>
+                    <input type="radio" name="grade" value="second"> 2<sup>nd</sup>
+                    <input type="radio" name="grade" value="third"> 3<sup>rd</sup>
+                    <input type="radio" name="grade" value="fourth"> 4<sup>th</sup>
+                    <input type="radio" name="grade" value="fifth"> 5<sup>th</sup>
+                </div>
+
+                <div class="flexfullwidth">
+                    Parent/Guardian:
+                    <input type="text" name="parent_guardian">
+                </div>
+
+                <div class="flexhalfwidth">
+                    <div class="flexphone">
+                        Contact Phone:
+                        <input type="tel" name="phone_number">
+                    </div>
+
+                    <div class="flexemail">
+                        Contact Email:
+                        <input type="email" name="email">
+                    </div>
+                </div>
+
+                <div class="bold labels">
+                    Which elementary schools do you live near?
+                </div>
+        
+                    <div class="selectoptions">
+        
+                        <div class="selectfirst bold">
+        
+                            First Closest School:
+                            <select name="firstschool">
+                                <optgroup label="Please Select a School">
+                                <option value="aj_katzenmaier">AJ Katzenmaier</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="howard_a_yeager">Howard A Yeager</option>
+                                <option value="marjorie_p_hart">Marjorie P Hart</option>
+                                <option value="north">North Elementary</option>
+                                <option value="south">South Elementary</option>
+                                </optgroup>   
+                            </select>
+                        </div>
+
+                        <div class="selectsecond bold">
+
+                            Second Closest School:
+                            <select name="secondschool">
+                                <optgroup label="Please Select a School">
+                                <option value="aj_katzenmaier">AJ Katzenmaier</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="howard_a_yeager">Howard A Yeager</option>
+                                <option value="marjorie_p_hart">Marjorie P Hart</option>
+                                <option value="north">North Elementary</option>
+                                <option value="south">South Elementary</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="labels"><p class="bold">What position(s) do you normally play?</p><p>(check all that apply)</p></div>
+                        <div class="flexpos"> 
+                            <div class="flexpos1">
+                              <input type="checkbox" name="play_position" value="forward"> Forward
+                              <input type="checkbox" name="play_position" value="midfield"> Midfield
+                            </div>
+          
+                            <div class="flexpos2">
+                              <input type="checkbox" name="play_position" value="defense"> Defense
+                              <input type="checkbox" name="play_position" value="goalkeeper"> Goalkeeper
+                            </div>
+                        </div>
+          
+                        <div class="labels"><p class="bold">What position(s) do you want to play?</p><p>(check all that apply)</p></div>
+                        <div class="flexpos">
+                          <div class="flexpos1">
+                              <input type="checkbox" name="want_position" value="forward"> Forward
+                              <input type="checkbox" name="want_position" value="midfield"> Midfield
+                          </div>
+          
+                          <div class="flexpos2">
+                              <input type="checkbox" name="want_position" value="defense"> Defense
+                              <input type="checkbox" name="want_position" value="goalkeeper"> Goalkeeper
+                          </div>
+                        </div>
+
+                        <div class="flexuniform bold">
+                            <input type="checkbox" name="already_have_uniform" value="already_has_uniform"> Already Have a Uniform
+                        </div>
+
+                <div class="labels">
+                    <div class="label1 bold underlined">Jersey Size</div>
+                    <div class="label2 bold underlined">Shorts Size</div>
+                </div>       
+
+                <div class="flexkitcontainer">
+                        
+                    <div class="flexjersey">
+                        
+                        <div class="jersey1">
+                            <div>
+                            <input type="radio" name="jersey_size" value="youth_small"> Youth Small
+                            </div>
+                            <div>
+                            <input type="radio" name="jersey_size" value="youth_medium"> Youth Medium
+                            </div>
+                            <div>
+                            <input type="radio" name="jersey_size" value="youth_large"> Youth Large
+                            </div>
+                            <div>
+                            <input type="radio" name="jersey_size" value="small"> Small
+                            </div>
+                        </div>
+                        <div class="jersey2">
+                            <div>
+                            <input type="radio" name="jersey_size" value="medium"> Medium
+                            </div>
+                            <div>
+                            <input type="radio" name="jersey_size" value="large"> Large
+                            </div>
+                            <div>
+                            <input type="radio" name="jersey_size" value="extra_large"> Extra Large
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flexshorts">
+                            <div class="shorts1">
+                                <div>
+                                    <input type="radio" name="shorts_size" value="youth_small"> Youth Small
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="youth_medium"> Youth Medium
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="youth_large"> Youth Large
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="small"> Small
+                                </div>
+                            </div>
+                            <div class="shorts2">
+                                <div>
+                                    <input type="radio" name="shorts_size" value="medium"> Medium
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="large"> Large
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="extra_large"> Extra Large
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+            <p class="bold underlined">Permission to Play</p>
+
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.
+                By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.
+            </p>
+
+            <div class="flexsigndate">
+
+                <div class="flexsignature">
+                    Parent/Guardian Name:
+                    <input type="text" name="signature">
+                </div>
+    
+                <div class="flexdate">
+                    Date:
+                    <input type="date" name="date">
+                </div>
+    
+            </div>
+
+            <div class="flexbutton">
+                <input type="submit" class="button" value="Send">
+            </div>
+
+
+
+
+
+              </div>
+            </form>    
+
+          </div>   
+</body>
+</html>
